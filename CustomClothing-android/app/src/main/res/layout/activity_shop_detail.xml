@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:id="@+id/rv_shop_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bg_size">
+
+        <LinearLayout
+            android:id="@+id/ll_shop_detail_try_on"
+            android:background="@drawable/ll_shop_detail_try_on"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            >
+
+            <TextView
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/title_text_color"
+                android:gravity="center"
+                android:text="@string/try_on_it"
+                android:layout_width="wrap_content"
+                style="@style/AppTheme.TextViewStyleBlack"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_shop_detail_add_to_cart"
+            android:descendantFocusability="beforeDescendants"
+            android:background="@drawable/ll_shop_detail_add_to_cart"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/title_text_color"
+                android:gravity="center"
+                android:text="@string/add_to_cart"
+                android:layout_width="wrap_content"
+                style="@style/AppTheme.TextViewStyleBlack"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:id="@+id/rl_cart_shop_item"
+                android:background="@drawable/item_white_pressed_bg"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <View
+        android:background="@color/line_color_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        />
+
+    <ImageView
+        android:padding="@dimen/img_padding"
+        android:id="@+id/iv_cart_item_shop_main_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <View
+        android:background="@color/line_color_bg"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"/>
+
+    <View
+        android:background="@color/line_color_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_cart_item_shop_main_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/iv_cart_item_shop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/text_padding_small"
+            android:text="@string/price"
+            android:textColor="@color/colorPrimaryRed"
+            android:textSize="@dimen/text_size_xsmall"/>
+
+        <TextView
+            android:id="@+id/iv_cart_item_shop_sales_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/text_padding_small"
+            android:text="@string/sale_count"
+            android:textSize="@dimen/text_size_xsmall"/>
+
+        <TextView
+            android:id="@+id/iv_cart_item_shop_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/text_padding_small"
+            android:text="@string/type"
+            android:textSize="@dimen/text_size_xsmall"
+            />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_cart_item_is_selected"
+            android:layout_marginTop="@dimen/vertical_margin"
+            android:layout_width="@dimen/cb_select_size"
+            android:layout_height="@dimen/cb_select_size"/>
+    </LinearLayout>
+
+    <View
+        android:background="@color/line_color_bg"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

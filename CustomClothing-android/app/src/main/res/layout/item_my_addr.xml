@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:background="@color/grey_bg"
+              android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_addr_name"
+            style="@style/AppTheme.TextViewMulLinesInH"
+            android:layout_weight="3"
+            android:lines="2"
+            />
+
+        <TextView
+            android:id="@+id/tv_addr_edit"
+            style="@style/AppTheme.TextViewMulLinesInH"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/bt_pressed_bg"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:textColor="@color/white_bg"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_addr_set_main"
+            style="@style/AppTheme.TextViewMulLinesInH"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            style="@style/AppTheme.TextViewMulLinesInH"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/set_main"
+            />
+    </LinearLayout>
+
+</LinearLayout>

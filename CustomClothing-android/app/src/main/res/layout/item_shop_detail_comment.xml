@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/grey_bg"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_comment_item_name"
+            style="@style/AppTheme.TextViewStyleBlack"
+            android:layout_width="match_parent"
+            android:text="昵称"/>
+
+        <TextView
+            android:id="@+id/tv_comment_item_content"
+            style="@style/AppTheme.TextViewStyleBlack"
+            android:layout_width="match_parent"
+            android:text="评论的内容\n"
+            android:textSize="@dimen/text_size_small"/>
+
+        <TextView
+            android:textColor="@color/text_color_grey"
+            android:id="@+id/tv_comment_item_time"
+            style="@style/AppTheme.TextViewStyleBlack"
+            android:layout_width="match_parent"
+            android:text="评论的时间"
+            android:textSize="@dimen/text_size_small"/>
+    </LinearLayout>
+
+    <View
+        android:background="@color/line_color_bg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

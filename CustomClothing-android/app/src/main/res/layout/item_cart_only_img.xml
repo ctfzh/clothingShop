@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_item_cart_img"
+              android:layout_width="@dimen/shop_main_img_size_w"
+              android:layout_height="@dimen/shop_main_img_size_h"
+              android:background="@drawable/item_pressed_bg"
+              android:orientation="vertical"
+              android:padding="@dimen/vertical_margin_half">
+
+    <ImageView
+        android:id="@+id/iv_item_cart_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

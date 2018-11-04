@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+
+// realm
+apply plugin: 'realm-android'
+
+android {
+
+    // 编译版本
+    compileSdkVersion 25
+    // 编译工具版本
+    buildToolsVersion '25.0.2'
+    // 默认基本配置
+    defaultConfig {
+        // 应用包名id
+        applicationId "com.tl.customclothing"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    // 签名配置
+    signingConfigs {
+        tl {
+            storeFile file('tl.jks')
+            keyAlias 'fanxiang'
+            keyPassword 'lintian'
+            storePassword 'tianlin'
+        }
+    }
+
+    buildTypes {
+        // 测试环境
+        SIT {
+            // 可调式
+            debuggable true
+            // JNI可调式
+            jniDebuggable true
+            // 签名配置
+            signingConfig signingConfigs.tl
+            // 是否混淆
+            minifyEnabled false
+            // 包名的后缀
+            applicationIdSuffix '.sit'
+            // 版本名称后缀，如1.0.sit
+            versionNameSuffix 'sit'
+        }
+        // 用户验收环境
+        release {
+            debuggable false
+            jniDebuggable false
+            signingConfig signingConfigs.tl
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationIdSuffix '.uat'
+            // 版本名称后缀，如1.0.sit
+            versionNameSuffix 'uat'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:25.2.0'
+    // butterknife
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.jakewharton:butterknife-compiler:8.5.1'
+    // retrofit and okhttp
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.5.0'
+    compile 'com.jakewharton.rxbinding:rxbinding:1.0.0'
+    // fastjson
+    compile 'com.alibaba:fastjson:1.1.55.android'
+    // 图片播放
+    compile 'com.synnapps:carouselview:0.0.10'
+    // 下拉刷新
+    compile 'com.wuxiaolong.pullloadmorerecyclerview:library:1.0.4'
+    // EventBus
+    compile 'org.greenrobot:eventbus:3.0.0'
+    // imageLoader
+    compile files('libs/universal-image-loader-1.9.5.jar')
+}

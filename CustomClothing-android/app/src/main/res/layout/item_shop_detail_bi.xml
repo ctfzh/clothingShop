@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/grey_bg"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/vertical_margin"
+        android:background="@color/white_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_shop_detail_tag"
+            android:textSize="@dimen/text_size_xxlarge"
+            android:text="tag"
+            android:layout_width="match_parent"
+            style="@style/AppTheme.TextViewStyleBlack"/>
+
+        <TextView
+            android:id="@+id/tv_shop_detail_price"
+            android:textColor="@color/colorPrimaryRed"
+            android:textSize="@dimen/text_size_xxxlarge"
+            android:text="价格"
+            android:layout_width="match_parent"
+            style="@style/AppTheme.TextViewStyleBlack"/>
+        />
+
+        <LinearLayout
+            style="@style/AppTheme.LLinearWithMargin">
+
+            <TextView
+                android:id="@+id/tv_shop_detail_sale_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|top"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="销量22222"
+                />
+
+            <TextView
+                android:id="@+id/tv_shop_detail_type"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|top"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="男士上衣"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_shop_detail_addr"
+            android:textSize="@dimen/text_size_xxlarge"
+            android:text="产地"
+            android:layout_width="match_parent"
+            style="@style/AppTheme.TextViewStyleBlack"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:text="@string/comment"
+        android:layout_width="match_parent"
+        style="@style/AppTheme.TextViewStyleBlack"/>
+
+
+</LinearLayout>

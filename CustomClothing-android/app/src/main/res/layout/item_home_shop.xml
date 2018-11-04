@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/AppTheme.ItemLinear"
+              android:layout_height="@dimen/item_home_shop_h"
+              android:orientation="horizontal"
+              android:descendantFocusability="blocksDescendants"
+              android:id="@+id/ll_home_item_shop"
+    >
+
+    <ImageView
+        android:padding="@dimen/img_padding"
+        android:id="@+id/iv_home_item_shop_img"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="商品名"
+            android:textSize="@dimen/text_size_large"
+            android:id="@+id/tv_home_item_shop_tag"
+            style="@style/AppTheme.TextViewMulLinesInV"
+            android:maxLines="2"
+            />
+
+        <TextView
+            android:textSize="@dimen/text_size_large"
+            android:text="卖家地址"
+            android:id="@+id/tv_home_item_shop_addr"
+            style="@style/AppTheme.TextViewMulLinesInV"
+            android:maxLines="2"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="@dimen/text_size_xsmall"
+                android:textColor="@color/colorPrimaryRed"
+                android:id="@+id/tv_home_item_shop_price"
+                style="@style/AppTheme.TextViewMulLinesInH"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="价格999"
+                />
+
+            <TextView
+                android:textSize="@dimen/text_size_xsmall"
+                android:id="@+id/tv_home_item_shop_sale_count"
+                style="@style/AppTheme.TextViewMulLinesInH"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="销量22222"
+                />
+
+            <TextView
+                android:textSize="@dimen/text_size_xsmall"
+                android:id="@+id/tv_home_item_shop_type"
+                style="@style/AppTheme.TextViewMulLinesInH"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="男士上衣"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

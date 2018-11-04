@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/ll_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_size"
+                android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar_back"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/horizontal_margin"
+        android:background="@drawable/item_pressed_bg"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/toolbar_icon_size_w"
+            android:layout_height="@dimen/toolbar_icon_size_h"
+            android:src="@drawable/ic_tool_bar_back"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/toolbar_title_width"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/ic_tool_bar_back"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/title_text_size"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/horizontal_margin"
+        android:background="@drawable/item_pressed_bg"
+        >
+
+        <TextView
+            android:text="完成"
+            android:id="@+id/tv_toolbar_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:src="@drawable/ic_tool_bar_back"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/title_text_size"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

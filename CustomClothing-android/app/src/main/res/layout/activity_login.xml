@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".features.login.LoginActivity"
+    >
+
+    <include layout="@layout/toolbar"/>
+
+    <EditText
+        android:background="@drawable/big_edittext_bg"
+        android:inputType="textPassword"
+        android:id="@+id/et_login_password"
+        style="@style/AppTheme.EditText"
+        android:layout_centerInParent="true"
+        android:hint="@string/please_input_pwd"
+        />
+
+    <EditText
+        android:background="@drawable/big_edittext_bg"
+        android:inputType="phone"
+        android:id="@+id/et_login_username"
+        style="@style/AppTheme.EditText"
+        android:layout_above="@id/et_login_password"
+        android:layout_marginBottom="@dimen/vertical_margin"
+        android:hint="@string/please_input_username"/>
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/iv_login_user_icon"
+        android:layout_width="@dimen/iv_user_icon_size"
+        android:layout_height="@dimen/iv_user_icon_size"
+        android:layout_above="@id/et_login_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/vertical_margin3"/>
+
+    <TextView
+        android:id="@+id/tv_login_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/et_login_password"
+        android:layout_marginRight="@dimen/horizontal_margin2"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:text="@string/tv_login_register"/>
+
+    <Button
+        android:id="@+id/bt_login_login"
+        style="@style/AppTheme.Button"
+        android:layout_below="@id/tv_login_register"
+        android:layout_marginTop="@dimen/vertical_margin2"
+        android:background="@drawable/bt_pressed_bg"
+        android:text="@string/login_login"
+        />
+</RelativeLayout>

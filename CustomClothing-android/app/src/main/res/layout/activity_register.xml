@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".features.register.RegisterActivity"
+    >
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/iv_user_icon_size"
+        android:layout_height="@dimen/iv_user_icon_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/vertical_margin2"
+        android:layout_marginTop="@dimen/vertical_margin2"
+        android:src="@mipmap/ic_launcher"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/vertical_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/AppTheme.LLinearWithMargin">
+
+                <TextView
+                    style="@style/AppTheme.TextViewStyleBlack"
+                    android:layout_weight="1"
+                    android:text="@string/tel_number"/>
+
+                <EditText
+                    android:inputType="phone"
+                    android:id="@+id/et_reg_username"
+                    style="@style/AppTheme.EditText"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/big_edittext_bg"
+                    android:hint="@string/please_input_tel_no"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/AppTheme.LLinearWithMargin"
+                android:layout_marginTop="@dimen/vertical_margin">
+
+                <TextView
+                    style="@style/AppTheme.TextViewStyleBlack"
+                    android:layout_weight="1"
+                    android:text="@string/password"/>
+
+                <EditText
+                    android:id="@+id/et_reg_password"
+                    style="@style/AppTheme.EditText"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/big_edittext_bg"
+                    android:hint="@string/please_input_password"
+                    android:inputType="textPassword"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/AppTheme.LLinearWithMargin"
+                android:layout_marginTop="@dimen/vertical_margin">
+
+                <TextView
+                    style="@style/AppTheme.TextViewStyleBlack"
+                    android:layout_weight="1"
+                    android:text="@string/re_password"/>
+
+                <EditText
+                    android:id="@+id/et_reg_re_password"
+                    style="@style/AppTheme.EditText"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/big_edittext_bg"
+                    android:hint="@string/please_input_password_again"
+                    android:inputType="textPassword"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/AppTheme.LLinearWithMargin"
+                android:layout_marginTop="@dimen/vertical_margin">
+
+                <TextView
+                    style="@style/AppTheme.TextViewStyleBlack"
+                    android:layout_weight="1"
+                    android:text="@string/relname"/>
+
+                <EditText
+                    android:id="@+id/et_reg_rel_name"
+                    style="@style/AppTheme.EditText"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/big_edittext_bg"
+                    android:hint="@string/please_input_relname"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/AppTheme.LLinearWithMargin"
+                android:layout_marginTop="@dimen/vertical_margin">
+
+                <TextView
+                    style="@style/AppTheme.TextViewStyleBlack"
+                    android:layout_weight="1"
+                    android:text="@string/nickname"/>
+
+                <EditText
+                    android:id="@+id/et_reg_nick_name"
+                    style="@style/AppTheme.EditText"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/big_edittext_bg"
+                    android:hint="@string/please_input_nickname"/>
+            </LinearLayout>
+
+            <RadioGroup
+                style="@style/AppTheme.LLinearWithMargin"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AppTheme.TextViewStyleBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="@dimen/horizontal_margin"
+                    android:text="@string/gender"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_reg_male"
+                    style="@style/AppTheme.TextViewStyleBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="@dimen/horizontal_margin"
+                    android:text="@string/male"/>
+
+                <RadioButton
+                    android:id="@+id/rb_reg_female"
+                    style="@style/AppTheme.TextViewStyleBlack"
+                    android:layout_width="wrap_content"
+                    android:text="@string/female"/>
+            </RadioGroup>
+
+            <LinearLayout
+                style="@style/AppTheme.LLinearWithMargin"
+                android:layout_marginTop="@dimen/vertical_margin">
+
+                <TextView
+                    style="@style/AppTheme.TextViewStyleBlack"
+                    android:layout_weight="1"
+                    android:text="@string/main_addr"/>
+
+                <EditText
+                    android:id="@+id/et_reg_user_addr"
+                    style="@style/AppTheme.EditText"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/big_edittext_bg"
+                    android:gravity="start"
+                    android:hint="@string/please_input_addr"
+                    android:lines="5"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_reg_reg"
+                style="@style/AppTheme.Button"
+                android:layout_marginBottom="@dimen/vertical_margin3"
+                android:layout_marginTop="@dimen/vertical_margin2"
+                android:background="@drawable/bt_pressed_bg"
+                android:text="@string/register_now"
+                android:textColor="@color/bt_text_color"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DrawableRadioButton">
+
+        <attr name="drawableSize" format="dimension"/>
+        <attr name="drawableTop" format="reference"/>
+        <attr name="drawableLeft" format="reference"/>
+        <attr name="drawableRight" format="reference"/>
+        <attr name="drawableBottom" format="reference"/>
+        <attr name="drawableTopSelected" format="reference"/>
+        <attr name="drawableLeftSelected" format="reference"/>
+        <attr name="drawableRightSelected" format="reference"/>
+        <attr name="drawableBottomSelected" format="reference"/>
+    </declare-styleable>
+</resources>

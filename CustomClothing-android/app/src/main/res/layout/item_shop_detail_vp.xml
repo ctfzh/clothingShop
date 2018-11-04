@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/shop_item_vp_h">
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/cv_shop_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:animateOnBoundary="true"
+        app:autoPlay="false"
+        app:fillColor="#FFFFFFFF"
+        app:indicatorGravity="bottom|center_horizontal"
+        app:indicatorOrientation="horizontal"
+        app:layout_collapseMode="parallax"
+        app:layout_collapseParallaxMultiplier="0.5"
+        app:pageColor="@color/colorPrimary"
+        app:radius="@dimen/carouselview_radius"
+        app:slideInterval="3000"
+        app:snap="true"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="1dp"/>
+
+</LinearLayout>

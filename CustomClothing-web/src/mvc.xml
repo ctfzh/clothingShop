@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<action-mappings>
+
+	<!-- 配置调用Servlet举例 -->
+	<action classname="com.tl.customclothing.controller.TestController"
+		path="testCCC.test" method="test">
+	</action>
+
+	<!-- 注册 -->
+	<action classname="com.tl.customclothing.controller.UserController"
+		path="RegisterUser" method="register">
+	</action>
+
+	<!-- 登录 -->
+	<action classname="com.tl.customclothing.controller.UserController"
+		path="UserLogin" method="login">
+	</action>
+
+	<!-- 商品查询 -->
+	<action classname="com.tl.customclothing.controller.ShopControl"
+		path="QueryShop" method="query">
+	</action>
+
+	<!-- 商品详细 -->
+	<action classname="com.tl.customclothing.controller.ShopControl"
+		path="ShopDetail" method="detail"></action>
+
+	<!-- 提交订单 -->
+	<action classname="com.tl.customclothing.controller.OrderControl"
+		path="SubmitOrder" method="submit"></action>
+
+	<!-- 搜索订单 -->
+	<action classname="com.tl.customclothing.controller.OrderControl"
+		path="OrderSearch" method="search"></action>
+
+	<!-- 发表评论 -->
+	<action classname="com.tl.customclothing.controller.CommentControl"
+		path="PostComment" method="post"></action>
+		
+		<!-- 获取地址 -->
+	<action classname="com.tl.customclothing.controller.UserController"
+		path="QueryAddr" method="queryAddr"></action>
+		
+		<!-- 更新地址 -->
+	<action classname="com.tl.customclothing.controller.UserController"
+		path="UpdateAddr" method="updateAddr"></action>
+
+
+</action-mappings>

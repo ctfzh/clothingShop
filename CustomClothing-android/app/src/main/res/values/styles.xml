@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.TitleBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+
+    <style name="AppTheme.MainRadioButton">
+        <item name="android:layout_marginLeft">@dimen/horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/horizontal_margin</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="AppTheme.ExpandedTitle">
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="AppTheme.EditText">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:alpha">0.7</item>
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/horizontal_margin</item>
+    </style>
+
+    <style name="AppTheme.Button">
+        <item name="android:textColor">@color/bt_text_color</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:alpha">0.7</item>
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/bt_height</item>
+        <item name="android:layout_marginLeft">@dimen/horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/horizontal_margin</item>
+    </style>
+
+    <style name="AppTheme.TextViewStyleBlack">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="AppTheme.ItemLinear">
+        <item name="android:descendantFocusability">blocksDescendants</item>
+        <item name="android:background">@drawable/item_pressed_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.LLinearWithMargin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/horizontal_margin</item>
+
+    </style>
+
+    <style name="AppTheme.TextViewMulLinesInV">
+        <item name="android:padding">@dimen/text_padding_half</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="AppTheme.TextViewMulLinesInH">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:gravity">left</item>
+        <item name="android:padding">@dimen/text_padding_half</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.TextViewFlagTitle">
+        <item name="android:layout_width">@dimen/flag_title</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>
